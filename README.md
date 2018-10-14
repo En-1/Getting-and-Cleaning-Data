@@ -61,7 +61,7 @@ Features are normalized and bounded within [-1,1]
 
 ## General analysis description
 
-#0. Data ware  downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip , unzipped ans saved into data directory as "./data/UCI HAR Dataset". Further data manipulation in https://github.com/En-1/Getting-and-Cleaning-Data/blob/master/run_analysis.R
+#0. Data were  downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip , unzipped ans saved into data directory as "./data/UCI HAR Dataset". Further data manipulation in https://github.com/En-1/Getting-and-Cleaning-Data/blob/master/run_analysis.R
 
 #1. Creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
 
