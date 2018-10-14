@@ -44,17 +44,17 @@ Features are normalized and bounded within [-1,1]
 
 #0. Data ware  downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip , unzipped ans saved into data directory as "./data/UCI HAR Dataset". Further data manipulation in https://github.com/En-1/Getting-and-Cleaning-Data/blob/master/run_analysis.R
 
-#Creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
+#1. Creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
 
-#Loadind files into R - load using read.table, assign name as file name
+#2. Loadind files into R - load using read.table, assign name as file name
 
-#1. Merges the training and the test sets to create one data set - using rbind
+#3. Merges the training and the test sets to create one data set - using rbind
 
-#2. Extracts only the measurements on the mean and standard deviation - create logical vecror from feautures names, slect fron DSet
+#4. Extracts only the measurements on the mean and standard deviation - create logical vecror from feautures names, slect fron DSet
 
-#3. Uses descriptive activity names to name the activities in the data set - merge y with activity_labels
+#5. Uses descriptive activity names to name the activities in the data set - merge y with activity_labels
 
-#4. Appropriately labels the data set with descriptive variable names - using feautures names as DSet names
+#6. Appropriately labels the data set with descriptive variable names - using feautures names as DSet names
 
-#5. Create a second, independent tidy data set with the average of each variable for each activity and each subject - using dplyr
+#7. Create a second, independent tidy data set with the average of each variable for each activity and each subject - using dplyr
 
