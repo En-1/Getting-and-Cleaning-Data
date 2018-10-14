@@ -42,9 +42,11 @@ Features are normalized and bounded within [-1,1]
 
 ## General analysis description
 
-#A. creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
+#0. Data ware  downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip , unzipped ans saved into data directory as "./data/UCI HAR Dataset". Further data manipulation in https://github.com/En-1/Getting-and-Cleaning-Data/blob/master/run_analysis.R
 
-#B. loadind files into R - load using read.table, assign name as file name
+#Creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
+
+#Loadind files into R - load using read.table, assign name as file name
 
 #1. Merges the training and the test sets to create one data set - using rbind
 
