@@ -12,7 +12,7 @@ for (i in 1:length(listF)) {
   #1. Merges the training and the test sets to create one data set
 DSet<-rbind(X_test,X_train)
   #2. Extracts only the measurements on the mean and standard deviation for each measurement
-namesL<-grepl("mean|std",features[,2])
+namesL<-grepl("mean|std",features[,2])&!grepl("meanFreq",features[,2])
 n<-seq_along(namesL)[namesL]
 DSet<-DSet[,n]
   #3. Uses descriptive activity names to name the activities in the data set
@@ -23,4 +23,4 @@ names(Subject)<-"Subject"
 names(DSet)<-features[,2][namesL]
 DSet<-cbind(Subject,Activity,DSet)
   #5. creates a second, independent tidy data set with the average of each variable for each activity and each subject
-DSet%>%group_by(Subject,Activity)%>%summarise_all(mean)->DSet1
+DSet%>%group_by(Subject,Activity)%>%summarise_all(mean)->MeanCleanDSet
