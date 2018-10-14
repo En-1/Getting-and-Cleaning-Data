@@ -42,11 +42,11 @@ Features are normalized and bounded within [-1,1]
 
 ##General analysis description
 
-# A. creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
-# B. loadind files into R - load using read.table, assign name as file name
-# 1. Merges the training and the test sets to create one data set - using rbind
-# 2. Extracts only the measurements on the mean and standard deviation - create logical vecror from feautures names, slect fron DSet
-# 3. Uses descriptive activity names to name the activities in the data set - merge y with activity_labels
-# 4. Appropriately labels the data set with descriptive variable names - using feautures names as DSet names
-# 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject - using dplyr
+#A. creating list of files -  text files (.txt) from dirs and subdirs of loading Data except "Inertial Signals" subdirs
+#B. loadind files into R - load using read.table, assign name as file name
+#1. Merges the training and the test sets to create one data set - using rbind
+#2. Extracts only the measurements on the mean and standard deviation - create logical vecror from feautures names, slect fron DSet
+#3. Uses descriptive activity names to name the activities in the data set - merge y with activity_labels
+#4. Appropriately labels the data set with descriptive variable names - using feautures names as DSet names
+#5. Create a second, independent tidy data set with the average of each variable for each activity and each subject - using dplyr
 
