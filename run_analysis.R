@@ -16,7 +16,7 @@ namesL<-grepl("mean|std",features[,2])&!grepl("meanFreq",features[,2])
 n<-seq_along(namesL)[namesL]
 DSet<-DSet[,n]
   #5. Uses descriptive activity names to name the activities in the data set
-Activity<-merge(rbind(y_test,y_train),activity_labels)[,2]
+Activity<-rbind(y_test,y_train)%>%left_join(activity_labels)%>%select(Activity=V2)
 Subject<-rbind(subject_test,subject_train)
 names(Subject)<-"Subject"
   #6. Appropriately labels the data set with descriptive variable names
